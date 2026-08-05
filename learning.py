@@ -1,23 +1,3 @@
-# 这是一个示例 Python 脚本。
-from cmath import acos
-from unicodedata import name
-
-
-# 按 ⌃R 执行或将其替换为您的代码。
-# 按 双击 ⇧ 在所有地方搜索类、文件、工具窗口、操作和设置。
-
-
-def print_hi(name):
-    # 在下面的代码行中使用断点来调试脚本。
-    print(f'Hi, {name}')  # 按 ⌘F8 切换断点。
-
-
-# 按装订区域中的绿色按钮以运行脚本。
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# 访问 https://www.jetbrains.com/help/pycharm/ 获取 PyCharm 帮助
-
 #字面量
 #int
 888
@@ -198,34 +178,34 @@ for item in fru:
 print("-------------------------------------------------")
 
 #list
-shoping_list = [ ]
-shoping_list.append("手机")
-shoping_list.append("平板")
-shoping_list.append("电脑")
-shoping_list.append("电视")
-shoping_list.append("游戏机")
-shoping_list.append("键盘")
-print(shoping_list)
-shoping_list.remove("平板")
-print(shoping_list)
-del shoping_list[3]
-print(shoping_list)
-key_board = shoping_list.pop(3)
+shopping_list = [ ]
+shopping_list.append("手机")
+shopping_list.append("平板")
+shopping_list.append("电脑")
+shopping_list.append("电视")
+shopping_list.append("游戏机")
+shopping_list.append("键盘")
+print(shopping_list)
+shopping_list.remove("平板")
+print(shopping_list)
+del shopping_list[3]
+print(shopping_list)
+key_board = shopping_list.pop(3)
 print(key_board)
-print(shoping_list)
-shoping_list[2] = "耳机"
-print(shoping_list)
-shoping_list.insert(2,"手表")
-print(shoping_list)
-print(shoping_list[0])
-print(shoping_list[0:2])         #切片
-print(shoping_list[:2])
-print(shoping_list[2:])
-for item in shoping_list[0:2]:
+print(shopping_list)
+shopping_list[2] = "耳机"
+print(shopping_list)
+shopping_list.insert(2,"手表")
+print(shopping_list)
+print(shopping_list[0])
+print(shopping_list[0:2])         #切片
+print(shopping_list[:2])
+print(shopping_list[2:])
+for item in shopping_list[0:2]:
     print(item)
-print(shoping_list[::2])
-print(shoping_list[1::2])
-print(shoping_list[:])
+print(shopping_list[::2])
+print(shopping_list[1::2])
+print(shopping_list[:])
 price = [800,600,1000]
 sorted_price = sorted(price)
 max_price = max(price)
@@ -235,7 +215,7 @@ print(min_price)
 print(sorted_price)
 sorted_price.reverse()
 print(sorted_price)
-print(len(shoping_list))
+print(len(shopping_list))
 print("-------------------------------------------------")
 
 #元组 tuple
