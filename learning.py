@@ -25,7 +25,7 @@ if __name__ == '__main__':
 13.14
 #string
 "坚持"
-#boll
+#bool
 True
 False
 #NoneType
@@ -267,7 +267,7 @@ yy = [n*2 for n in nums]
 print(yy)
 print("-------------------------------------------------")
 
-#布尔 boll
+#布尔 bool
 print(7 < 5)
 print(7 > 5)
 print(7 == 5)
