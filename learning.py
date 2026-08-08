@@ -514,3 +514,18 @@ def foo(n):             #形参
     print(n)
 foo(n)
 print(n)
+
+#模块
+import tools1
+tools1.foo1( )
+tools1.foo2( )
+tools1.foo3( )
+
+from tools2 import foo4 as f4 , foo5 as f5 , foo6 as f6
+f4( )
+f5( )
+f6( )
+
+if __name__ == "__main__":
+    print("这是主文件")
+
