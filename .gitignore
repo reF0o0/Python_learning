@@ -1,19 +1,6 @@
-# Python
 __pycache__/
-*.py[cod]
-*.egg-info/
-dist/
-build/
+.cursor/
+.idea/
+.venv/
 mimo.py
 openai.yaml
-
-# Virtual environment
-.venv/
-venv/
-
-# IDE
-.idea/
-
-# OS
-.DS_Store
-Thumbs.db
