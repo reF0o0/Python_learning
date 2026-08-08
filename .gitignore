@@ -3,5 +3,5 @@ __pycache__/
 .cursor/
 .idea/
 .venv/
-mimo.py
 openai.yaml
+mimo.py
