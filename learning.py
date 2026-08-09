@@ -45,6 +45,8 @@ print("-------------------------------------------------")
 #计算
 print(1 + 2 - 2*4 / 2**2 + 1**3)
 print(7 % 3)             #求模运算符（余数）
+from inspect import AGEN_CLOSED
+from logging import getHandlerNames
 import math
 print(math.pi)
 print(math.e)
@@ -526,6 +528,26 @@ f4( )
 f5( )
 f6( )
 
-if __name__ == "__main__":
+if __name__ == "__main__":    #主文件判断
     print("这是主文件")
 
+#对象和类
+class student:
+    def __init__(self,a,b,c,d):
+        self.name = a
+        self.gender = b
+        self.age = c
+        self.height = d
+    
+    def listen(self):
+        print("听课")
+
+    def write(self):
+        print("写作")
+
+stu1 = student(1,2,3,4)
+print(stu1.name)
+stu1.listen( )
+del stu1.name
+print(stu1.gender)
+stu1.name = 1
