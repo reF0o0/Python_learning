@@ -666,3 +666,12 @@ age1 = age(18)
 print(age1.birth_year)
 print("-------------------------------------------------")
 
+#君子协定 + 改名机制
+class 类名:
+    def __init__(self,x):
+        self.__age = x
+
+对象 = 类名(18)
+print(对象)
+print(vars(对象))                    #vars()查看属性
+print(对象._类名__age)               #改名机制，非严格私有
