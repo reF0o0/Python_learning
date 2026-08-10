@@ -516,6 +516,7 @@ def foo(n):             #形参
     print(n)
 foo(n)
 print(n)
+print("-------------------------------------------------")
 
 #模块
 import tools1
@@ -530,6 +531,7 @@ f6( )
 
 if __name__ == "__main__":    #主文件判断
     print("这是主文件")
+print("-------------------------------------------------")
 
 #对象和类
 class student:
@@ -551,6 +553,7 @@ stu1.listen( )
 del stu1.name
 print(stu1.gender)
 stu1.name = 1
+print("-------------------------------------------------")
 
 #私有属性
 class person:
@@ -573,6 +576,7 @@ print(per1.get_age())
 per1.set_age(20)
 print(per1.get_age())
 per1.set_age(100)
+print("-------------------------------------------------")
 
 #装饰器
 def decorator(fuction):            #无参数
@@ -620,3 +624,45 @@ def handsome( ):
     return "0v0"
 
 print(handsome( ))
+
+class person:
+    def __init__(self,a):
+        self.__age = a
+    
+    @property
+    def age(self):
+        return self.__age
+
+    @age.setter
+    def age(self,b):
+        if b in range(1,100):
+            self.__age = b
+            print("修改成功")
+
+        else:
+            print("年龄错误")
+
+    @age.deleter
+    def age(self):
+        del self.__age
+        print("删除了age属性")
+
+per1 = person(10)
+print(per1.age)
+per1.age = 20
+print(per1.age)
+per1.age = 100
+del per1.age
+
+class age:                          #计算属性
+    def __init__(self,x):
+        self.__age = x
+
+    @property
+    def birth_year(self):
+        return 2026 - self.__age
+ 
+age1 = age(18)
+print(age1.birth_year)
+print("-------------------------------------------------")
+
