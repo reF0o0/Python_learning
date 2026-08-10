@@ -675,3 +675,49 @@ class 类名:
 print(对象)
 print(vars(对象))                    #vars()查看属性
 print(对象._类名__age)               #改名机制，非严格私有
+print("-------------------------------------------------")
+
+#继承
+class A:                                   #父类
+    def __init__(self,a,b):
+        self.name = a
+        self.age = b
+    
+    def foo1(self):
+        pass
+
+    def foo2(self):
+        pass
+
+class B(A):                                #子类
+    def foo1(self):
+        print(f"姓名为{self.name}")
+
+a1 = A(1,2)
+a1.foo1( )
+b1 = B(1,2)
+b1.foo1( )
+
+class A:                                  #父类
+    def __init__(self,a):
+        if a == 1:
+            print("账号错误")
+
+        elif a == 2:
+            print("密码错误")
+
+        else:
+            print("未知错误")
+
+class B(A):                             #子类
+    def __init__(self,a):
+        if a == 3:
+            print("验证码错误")
+        
+        else:
+            super( ).__init__(a)        #super().转到给父类代理对象
+            #A.__init__(self,a)         #父类.直接调用父类
+
+B(1)
+B(2)
+B(3)
