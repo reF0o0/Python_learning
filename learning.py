@@ -551,3 +551,25 @@ stu1.listen( )
 del stu1.name
 print(stu1.gender)
 stu1.name = 1
+
+#私有属性
+class person:
+    def __init__(self,a):
+        self.__age = a
+    
+    def get_age(self):
+        return self.__age
+
+    def set_age(self,b):
+        if b in range(1,100):
+            self.__age = b
+            print("修改成功")
+
+        else:
+            print("年龄错误")
+
+per1 = person(10)
+print(per1.get_age())
+per1.set_age(20)
+print(per1.get_age())
+per1.set_age(100)
