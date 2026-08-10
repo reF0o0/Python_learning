@@ -573,3 +573,50 @@ print(per1.get_age())
 per1.set_age(20)
 print(per1.get_age())
 per1.set_age(100)
+
+#装饰器
+def decorator(fuction):            #无参数
+    def x( ):
+        print("准备执行")
+        fuction( )
+        print("执行结束")
+    return x
+
+@decorator
+def send_ms( ):
+    print("发送短信")
+
+send_ms( )
+
+def decorator1(func):              #有参数
+    def x(*args,**kwargs):
+        print("准备执行")
+        func(*args,**kwargs)
+        print("执行结束")
+    return x
+
+@decorator1
+def send_wechat(message):
+    print(f"发送{message}")
+
+@decorator1
+def send_qq(name,message):
+    print(f"给{name}发送{message}")
+
+send_wechat(1)
+send_qq(1,2)
+
+def decorator2(func):               #有参数，有返回值
+    def x(*args,**kwargs):
+        print("准备执行")
+        value = func(*args,**kwargs)
+        print("执行结束")
+        return value
+    return x
+
+@decorator2
+def handsome( ):
+    print("我好帅")
+    return "0v0"
+
+print(handsome( ))
