@@ -3,3 +3,4 @@ __pycache__/
 .cursor/
 .idea/
 .venv/
+.ruff_cache/
