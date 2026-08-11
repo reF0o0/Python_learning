@@ -2,6 +2,6 @@
 __pycache__/
 .cursor/
 .idea/
-.venv/
-openai.yaml
-mimo.py
+.venv/s
+ruff.toml
+.vscode/
