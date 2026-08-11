@@ -2,6 +2,4 @@
 __pycache__/
 .cursor/
 .idea/
-.venv/s
-ruff.toml
-.vscode/
+.venv/
