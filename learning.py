@@ -863,3 +863,26 @@ p1.use_q()  # 对象(p1) 使用 类(Player) 的 方法(use_q)
 p1.hero.q( )                               类(Player) 的 对象(p1) 的 属性(hero) 实则为 类(Ashe) 的 对象(Ashe( ))
                                            p1.hero.q( ) 实则为 类(Ashe) 的 对象(Ashe( )) 内部执行 方法(q( ))
 """
+print("-------------------------------------------------")
+
+
+# 类属性、类方法、静态方法
+class Person:
+    country = "中国 "  # 类属性
+
+    def __init__(self, name):
+        self.name = name
+
+    @classmethod  # 类方法
+    def get_contry(cls):
+        return cls.country
+
+    @staticmethod  # 静态方法
+    def say_hello():
+        print("你好！")
+
+
+print(Person.country)
+print(Person.get_contry())
+Person.say_hello()
+print("-------------------------------------------------")
